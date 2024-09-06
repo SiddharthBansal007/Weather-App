@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="header">
+                <div class="searchbox">
+                    <input class="inputbox" type="text" placeholder="Enter Your Location">
+                    <button id="searchbutton" class="ri-search-line"></button>
+                </div>
+            </div>
+
+            <div class="location-not-found">
+                <h1>Sorry, Location not found!!!</h1>
+                <img src="/icons/404.png" alt="404 Error">
+            </div>
+
+            <div class="weatherbody">
+
+                <img class="weatherimg" src="/icons/clear.png" alt="Weather Image">
+                
+                <div class="weatherbox">
+                    <p class="temp">0 <sup>°C</sup></p>
+                    <p class="desc">Light Rain</p>
+                </div>
+
+                <div class="weatherdetail">
+                    <div class="humidity">
+                        <i class="ri-drop-fill"></i>
+                        <div class="text">
+                            <span id="humidity">45%</span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="windspeed">
+                        <i class="ri-windy-line"></i>
+                        <div class="text">
+                            <span id="windspeed">12Km/H</span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
